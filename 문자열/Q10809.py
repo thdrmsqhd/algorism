@@ -6,3 +6,13 @@ for i in range(len(userInput)):
 
 for i in list(strMap.values()):
     print(i , end= " ")
+
+
+# S = input()
+# abc ='abcdefghijklmnopqrstuvwxyz'
+
+# for i in abc:
+#     if i in S:
+#         print(S.index(i), end= ' ')
+#     else:
+#         print( -1, end =' ')
