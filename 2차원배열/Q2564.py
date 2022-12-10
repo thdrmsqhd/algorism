@@ -25,7 +25,7 @@ colorPapers = [
 ]
 
 for i in range(len(colorPapers)):
-    for j in range(1, len(colorPapers)):
-        print(colorPapers[i][0],colorPapers[j][0])
+    for j in range(1, len(colorPapers)-1):
+        print(colorPapers[i][0],colorPapers[j][0], end="/")
         print(colorPapers[i][1],colorPapers[j][1])
     print()
