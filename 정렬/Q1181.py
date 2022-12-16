@@ -1,16 +1,16 @@
 import sys
 
 
-def user_input():
-    return sys.stdin.readline()
+testLen = int(sys.stdin.readline())
+testCases = set()
+for i in range(testLen):
+    testCases.add(sys.stdin.readline())
 
+valueLenList = []
+for element in testCases:
+    valueList = [element, len(element)]
+    valueLenList.append(valueList)
 
-testCases = ['but', 'i', 'wont', 'hesitate', 'no', 'more', 'no', 'more', 'it', 'cannot', 'wait', 'im', 'yours']
-filterList = list(set(testCases))
-filterList.sort()
-print(filterList)
-# testLen = int(user_input())
-testLen = 13
-# testCases = []
-# for i in range(testLen):
-#     testCases.append(user_input())
+valueLenList.sort(key=lambda x: (x[1], x[0]))
+for valueLen in valueLenList:
+    print(valueLen[0], end="")
